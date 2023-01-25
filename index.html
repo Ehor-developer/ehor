@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>【公式】ehor.work</title>
+    <meta name="description" content="「りんご」が好きなえほの公式ホームページです。" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ehor-official" />
+    <meta property="og:image" content="img/img.png" />
+    <meta property="og:url" content="https://ehor.work" />
+    <meta property="og:site_name" content="Ehor.work｜Official サイト" />
+    <meta property="og:description" content="「りんご」が好きなえほの公式ホームページです。" />
+
+    <meta name="robots" content="noarchive">
+
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://ehor.work">
+                <b>🍎Ehor.work</b>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    <b>🏠Home</b>
+                </a>
+
+                <a class="navbar-item" href="about.html">
+                    <b>👥About</b>
+                </a>
+
+                <a class="navbar-item" href="announce.html">
+                    <b>📢お知らせ</b>
+                </a>
+                <a class="navbar-item" href="app.html">
+                    <b>🔧作ったアプリ</b>
+                </a>
+                <a class="navbar-item" href="contact.html">
+                    <b>📨お問い合わせ</b>
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-info" href="https://twitter.com/ehor_developer">
+                            <strong>🐤Twitter</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <session class="top">
+        <div class="toptitle">
+            <h1 class="title is-1" style="color: rgb(238, 45, 110);">デジタルに囲まれた日々。</h1>
+
+            <div class="block">
+                <b>
+                    <p>私の人生は全て<strong>２進数</strong>で成り立っています。</p>
+                </b><br><br>
+                <iframe src="embed/announce.html" width="100%" height="100%"></iframe>
+            </div>
+            <h1 class="title is-3">▼REAL2022</h1>
+            <video poster="img/img.png" loop muted autoplay playsinline>
+                <source src="img/video.mp4" type="video/mp4">
+                <source src="img/video.webm" type="video/webm">
+            </video>
+        </div>
+    </session>
+
+    <div id="page_top"><a href="#"></a></div>
+</body>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            Twitterのフォローよろしくお願いいたします!!<br>
+            <a href="contact.html">📨お問い合わせ</a>
+            <a href="https://twitter.com/ehor_developer">🐤Twitter</a>
+            <a href="about.html">❓私について</a>
+            <br> © 2022 Ehor
+        </p>
+    </div>
+</footer>
+<script>document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+    })
+</script>
+
+</html>
