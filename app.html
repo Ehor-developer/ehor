@@ -2,117 +2,144 @@
 <html>
 
 <head>
+    <noscript>
+        <div style="background-color: rgb(255, 255, 255); min-height: 110vh;">
+            <h1>エラー</h1>
+            <h3>Javascriptを有効にしてください。</h3>
+        </div>
+        <style>
+            body {
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                overflow: hidden;
+            }
+        </style>
+    </noscript>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>【公式】ehor.work</title>
-    <meta name="description" content="「りんご」が好きなえほの公式ホームページです。" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Ehor.work｜Ehorのホームページ</title>
+    <meta name="description" content="えほが自身で制作したホームページになります。私はいろいろな便利ツールや、WEBアプリなどを制作しています。
+    制作したWEBアプリなどはこのサイトで見ることができます。" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Ehor-official" />
-    <meta property="og:image" content="img/img.png" />
+    <meta property="og:title" content="えほ.work" />
+    <meta property="og:image" content="/img/icon.png" />
     <meta property="og:url" content="https://ehor.work" />
-    <meta property="og:site_name" content="Ehor.work｜Official サイト" />
-    <meta property="og:description" content="「りんご」が好きなえほの公式ホームページです。" />
+    <meta property="og:site_name" content="Ehor｜公式WEBサイト" />
+    <meta property="og:description" content="えほが自身で制作したホームページになります。私はいろいろな便利ツールや、WEBアプリなどを制作しています。
+        制作したWEBアプリなどはこのサイトで見ることができます。" />
 
     <meta name="robots" content="noarchive">
 
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
+<div id="header" style="background-color: --main-text;"></div>
+
 
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://ehor.work">
-                <b>🍎Ehor.work</b>
-            </a>
-
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+    <div class="hero anim">
+        <div class="center">
+            <p style="font-size: 9vh; color: rgb(49, 49, 49);  animation: bg 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;"
+                class="bold">アプリ一覧</p>
+            <p style="font-size: 3vh;  animation: bg 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;" class="bold">
+                いろいろ公開しています。</p>
+            <p style="font-size: 2vh; animation: bg 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;" class="bold">
+                <span class="material-symbols-outlined">
+                    expand_circle_down
+                </span>下へ</p>
         </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="index.html">
-                    <b>🏠Home</b>
-                </a>
-
-                <a class="navbar-item" href="about.html">
-                    <b>👥About</b>
-                </a>
-
-                <a class="navbar-item" href="announce.html">
-                    <b>📢お知らせ</b>
-                </a>
-                <a class="navbar-item" href="app.html">
-                    <b>🔧作ったアプリ</b>
-                </a>
-                <a class="navbar-item" href="contact.html">
-                    <b>📨お問い合わせ</b>
-                </a>
-            </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-info" href="https://twitter.com/ehor_developer">
-                            <strong>🐤Twitter</strong>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <session class="top">
-        <div class="toptitle">
-            <h1 class="title is-1" style="color: rgb(238, 45, 110);">作ったアプリです</h1>
-            <h1 class="title is-3">是非お使いください!!</h1>
-
-            <a href="https://ehor-developer.github.io/Saizencode/">
-                <button class="button is-danger">Saizencode:サイゼリヤのメニュー番号解読</button>
-            </a><br>
-            <a href="https://ehor-developer.github.io/plaan/">
-                <button class="button is-medium is-primary">Plaan:勉強を補助するツール</button>
-            </a>
-        </div>
-        
-    </session>
-</body>
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>
-            Twitterのフォローよろしくお願いいたします!!<br>
-            <a href="contact.html">📨お問い合わせ</a>
-            <a href="https://twitter.com/ehor_developer">🐤Twitter</a>
-            <a href="about.html">❓私について</a>
-            <br> © 2022 Ehor
-        </p>
     </div>
-</footer>
-<script>document.addEventListener('DOMContentLoaded', () => {
-
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach(el => {
-            el.addEventListener('click', () => {
-
-                // Get the target from the "data-target" attribute
-                const target = el.dataset.target;
-                const $target = document.getElementById(target);
-
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
-            });
-        });
-    })
-</script>
+    <div class="container">
+        <div class="mokuji hero fade_anm-up bold">
+            <div class="box">
+                <p class="fade_anm" style="font-size: 3.5vh; text-align: left;">\ 目次 /</p>
+                <hr>
+                <a class="fade_anm" style="font-size: 2vh;">(気になるものを押してね...)</p>
+                    <a class="fade_anm hover" href="#1" style="font-size: 3vh; text-align: left;">＃Saizencode</a>
+                    <a class="fade_anm hover" href="#2" style="font-size: 3vh; text-align: left;">＃Plaan</a>
+                    <a class="fade_anm hover" href="#3" style="font-size: 3vh; text-align: left;">＃Matiawa</a>
+                    <a class="fade_anm hover" href="#4" style="font-size: 3vh; text-align: left;">＃ChocolateGift</a>
+                    <a class="fade_anm hover" href="#5" style="font-size: 3vh; text-align: left;">＃褒め称えジェネレーター</a>
+                    <a class="fade_anm hover" href="#6" style="font-size: 3vh; text-align: left;">＃Nonstop</a>
+            </div>
+        </div>
+    </div>
+    <section id="1">
+        <div class="hero fade_anm-up bold">
+            <div class="box">
+                <p class="fade_anm" style="font-size: 3.5vh; text-align: left;">\ Saizencode /</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">サイゼリヤのメニュー番号からメニュー名に変換するアプリ。</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">友達からメニュー番号で送られてきた際にメニュー名で確認できます。</p>
+                <a class="button" href="https://ehor-developer.github.io/Saizencode/"
+                    style="background-color:rgb(5, 202, 143);">使ってみる</a>
+            </div>
+        </div>
+    </section>
+    <section id="2">
+        <div class="hero fade_anm-up bold">
+            <div class="box">
+                <p class="fade_anm" style="font-size: 3.5vh; text-align: left;">\ Plaan /</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">Plaanは集中したいときに使えるアプリです。</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">見やすいデザインであなたの集中をサポートします。</p>
+                <a class="button" href="https://ehor-developer.github.io/plaan/"
+                    style="background-color:rgb(5, 130, 202);">使ってみる</a>
+            </div>
+        </div>
+    </section>
+    <section id="3">
+        <div class="hero fade_anm-up bold">
+            <div class="box">
+                <p class="fade_anm" style="font-size: 3.5vh; text-align: left;">\ Matiawa /</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">WEBで動く位置情報共有アプリです。待ち合わせの時に使用できます。</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">大手位置情報アプリがサービス終了するため開発しました。</p>
+                <a class="button" href="https://ehor-developer.github.io/Matiawa/"
+                    style="background-color:rgb(228, 156, 24);">使ってみる</a>
+            </div>
+        </div>
+    </section>
+    <section id="4">
+        <div class="hero fade_anm-up bold">
+            <div class="box">
+                <p class="fade_anm" style="font-size: 3.5vh; text-align: left;">\ ChocolateGift /</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">デジタルチョコレートです。20XX年はバレンタインも電子化されます。</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">リンクを相手に送るだけで、想いを伝える事ができます。</p>
+                <a class="button" href="https://ehor-developer.github.io/tool/gift"
+                    style="background-color:rgb(228, 24, 92);">使ってみる</a>
+            </div>
+        </div>
+    </section>
+    <section id="5">
+        <div class="hero fade_anm-up bold">
+            <div class="box">
+                <p class="fade_anm" style="font-size: 2.5vh; text-align: left;">\ 褒め称えジェネレーター /</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">SNSにはチクチクした言葉ばかり。</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">この文を送るだけで、相手が幸せな気持ちになれるはず。</p>
+                <a class="button" href="https://ehor-developer.github.io/tool/hometatae"
+                    style="background-color:rgb(224, 76, 76);">使ってみる</a>
+            </div>
+        </div>
+    </section>
+    <section id="6">
+        <div class="hero fade_anm-up bold">
+            <div class="box">
+                <p class="fade_anm" style="font-size: 2.5vh; text-align: left;">\＃Nonstop /</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">ダウンロード版Plaan。</p>
+                <p class="fade_anm" style="font-size: 2vh; text-align: left;">こちらのほうがUIが整っています。安定性も高いです。</p>
+                <a class="button" href="https://ehor-developer.github.io/tool/hometatae"
+                    style="background-color:rgb(68, 96, 255);">ダウンロード</a>
+            </div>
+        </div>
+    </section>
+</body>
 
 </html>
+<script src="js/header.js"></script>
+<script src="js/anm.js"></script>

@@ -2,122 +2,119 @@
 <html>
 
 <head>
+    <!--Javascriptが有効になっていない場合の警告表示-->
+    <noscript>
+        <div style="background-color: rgb(255, 255, 255); min-height: 110vh;">
+            <h1>エラー</h1>
+            <h3>Javascriptを有効にしてください。</h3>
+        </div>
+        <style>
+            body {
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                overflow: hidden;
+            }
+        </style>
+    </noscript>
+    <!--HTML初期設定-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>【公式】ehor.work</title>
-    <meta name="description" content="「りんご」が好きなえほの公式ホームページです。" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Ehor-official" />
-    <meta property="og:image" content="img/img.png" />
-    <meta property="og:url" content="https://ehor.work" />
-    <meta property="og:site_name" content="Ehor.work｜Official サイト" />
-    <meta property="og:description" content="「りんご」が好きなえほの公式ホームページです。" />
-
-    <meta name="robots" content="noarchive">
-
+    <!--icoの設定-->
     <link rel="shortcut icon" href="/img/favicon.ico">
+    <!--フォント/CSSの読み込み-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <!--jQueryの読み込み-->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <!--SEOなど-->
+    <title>Ehor.work｜Ehorのホームページ</title>
+    <meta name="description" content="えほが自身で制作したホームページになります。私はいろいろな便利ツールや、WEBアプリなどを制作しています。
+    制作したWEBアプリなどはこのサイトで見ることができます。" />
+    <!--OCG設定-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="えほ.work" />
+    <meta property="og:image" content="/img/icon.png" />
+    <meta property="og:url" content="https://ehor.work" />
+    <meta property="og:site_name" content="Ehor｜公式WEBサイト" />
+    <meta property="og:description" content="えほが自身で制作したホームページになります。私はいろいろな便利ツールや、WEBアプリなどを制作しています。
+        制作したWEBアプリなどはこのサイトで見ることができます。" />
+    <meta name="robots" content="noarchive">
 </head>
+<!--ヘッダー読み込み-->
+<div id="header"></div>
 
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://ehor.work">
-                <b>🍎Ehor.work</b>
-            </a>
-
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="index.html">
-                    <b>🏠Home</b>
-                </a>
-
-                <a class="navbar-item" href="about.html">
-                    <b>👥About</b>
-                </a>
-
-                <a class="navbar-item" href="announce.html">
-                    <b>📢お知らせ</b>
-                </a>
-                <a class="navbar-item" href="app.html">
-                    <b>🔧作ったアプリ</b>
-                </a>
-                <a class="navbar-item" href="contact.html">
-                    <b>📨お問い合わせ</b>
-                </a>
-            </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-info" href="https://twitter.com/ehor_developer">
-                            <strong>🐤Twitter</strong>
-                        </a>
-                    </div>
-                </div>
+    <div class="akihabara">
+        <div class="hero anim">
+            <div class="center">
+                <p style="font-size: 9vh; color: aliceblue;  animation: bg 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;"
+                    class="bold">デジタルに囲まれた日々。</p>
+                <p style="font-size: 3vh;  animation: bg 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;" class="bold">
+                    「幅広く」をテーマに。</p>
+                <p style="font-size: 2vh; animation: bg 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;" class="bold">
+                    <span class="material-symbols-outlined">
+                        expand_circle_down
+                    </span>下へ</p>
             </div>
         </div>
-    </nav>
-    <session class="top">
-        <div class="toptitle">
-            <h1 class="title is-1" style="color: rgb(238, 45, 110);">デジタルに囲まれた日々。</h1>
-
-            <div class="block">
-                <b>
-                    <p>私の人生は全て<strong>２進数</strong>で成り立っています。</p>
-                </b><br><br>
-                <iframe src="embed/announce.html" width="100%" height="100%"></iframe>
-            </div>
-            <h1 class="title is-3">▼REAL2022</h1>
-            <video poster="img/img.png" loop muted autoplay playsinline disablePictureInPicture>
-                <source src="img/video.mp4" type="video/mp4">
-                <source src="img/video.webm" type="video/webm">
-            </video>
-        </div>
-    </session>
-
-    <div id="page_top"><a href="#"></a></div>
-</body>
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>
-            Twitterのフォローよろしくお願いいたします!!<br>
-            <a href="contact.html">📨お問い合わせ</a>
-            <a href="https://twitter.com/ehor_developer">🐤Twitter</a>
-            <a href="about.html">❓私について</a>
-            <br> © 2022 Ehor
-        </p>
     </div>
-</footer>
-<script>document.addEventListener('DOMContentLoaded', () => {
+    <div class="hero">
+        <div class="center">
+            <div class="center">
+                <p class="fade_anm anm bold" style="font-size: 7vh">はじめまして。</p>
+                <p class="fade_anm anm bold" style="font-size: 4vh">私はえほと言います。</p>
+                <p style="font-size: 2vh; animation: bg 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;" class="bold">
+                    <span class="material-symbols-outlined">
+                        expand_circle_down
+                    </span>下へ</p>
+            </div>
+        </div>
+    </div>
+    <div class="hero anm bold">
+        <div class="box">
+            <p class="fade_anm" style="font-size: 3.5vh; text-align: center;">\ プロフィール /</p>
+            <div class="center">
+                <img src="img/icon.jpg" class="icon">
+                <p class="fade_anm" style="font-size: 3vh;">
+                    えほ/Ehor</p>
+            </div>
+            <hr>
+            <p class="fade_anm" style="font-size: 2vh;">（私をハッシュタグで表すと...）</p>
+            <p class="fade_anm" style="font-size: 3vh; text-align: left;">＃<span id="age"></span></p>
+            <p class="fade_anm" style="font-size: 3vh; text-align: left;">＃オタク</p>
+            <p class="fade_anm" style="font-size: 3vh; text-align: left;">＃WEBアプリ開発</p>
+        </div>
+    </div>
 
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach(el => {
-            el.addEventListener('click', () => {
-
-                // Get the target from the "data-target" attribute
-                const target = el.dataset.target;
-                const $target = document.getElementById(target);
-
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
-            });
-        });
-    })
-</script>
+    <div class="comment">
+        <div class="hero fade_anm anm bold">
+            <ul>
+                <li style="margin-left: 6em;">動画編集</li><br>
+                <li style="margin-left: 10em;">3DCG</li><br>
+                <li style="margin-left: 3em;">WEB制作</li><br>
+                <li style="margin-left: 10em;">画像編集</li><br>
+                <li style="margin-left: 2em;">作曲</li><br>
+                <li style="margin-left: 5em;">ゲーム</li><br>
+                <li style="margin-left: 7em;">デザイン</li><br>
+                <li style="margin-left: 14em;">プログラミング</li><br>
+            </ul>
+        </div>
+    </div>
+    <div class="hero fade_anm anm bold">
+        <div class="center">
+            <p style="font-size: 5vh;" class="bold">いろんなことを</p>
+            <p style="font-size: 3vh;" class="bold">「幅広く」やっています。</p>
+        </div>
+    </div>
+</body>
 
 </html>
+<script src="js/header.js"></script>
+<script src="js/anm.js"></script>
+<script src="js/main.js"></script>
