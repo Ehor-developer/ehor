@@ -71,7 +71,17 @@ body {
     text-shadow: 1px 1px 10px #444;
 
 }
-
+#timer,#message{
+    color: #474747;
+    text-shadow: 1px 1px 30px #fffb00;
+}
+#message{
+    font-size: 3.6vh;
+}
+.time{
+    margin-left: 1em;
+    font-size: 3.6vh;
+}
 .hero p {
     text-align: center;
 }
